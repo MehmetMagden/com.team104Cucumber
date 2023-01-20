@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -20,6 +21,7 @@ public class AmazonStepdefinitions {
     }
     @Then("user search for Nutella in search box")
     public void user_search_for_nutella_in_search_box() {
+        amazonPage = new AmazonPage();
         amazonPage.amazonSearchBox.sendKeys("Nutella"+ Keys.ENTER);
 
 
@@ -39,4 +41,70 @@ public class AmazonStepdefinitions {
     }
 
 
+    @Then("user search for Java in search box")
+    public void userSearchForJavaInSearchBox() {
+        amazonPage = new AmazonPage();
+        amazonPage.amazonSearchBox.sendKeys("Java"+ Keys.ENTER);
+
+    }
+
+    @And("tests that results have Java word")
+    public void testsThatResultsHaveJavaWord() {
+
+
+        String expectedWord= "Java";
+        String actualRestulsText = amazonPage.amazonResultElement.getText();
+
+        Assert.assertTrue(actualRestulsText.contains(expectedWord));
+
+
+    }
+
+    @Then("user search for Samsung in search box")
+    public void userSearchForSamsungInSearchBox() {
+        amazonPage = new AmazonPage();
+        amazonPage.amazonSearchBox.sendKeys("Samsung"+ Keys.ENTER);
+    }
+
+    @And("tests that results have Samsung word")
+    public void testsThatResultsHaveSamsungWord() {
+
+        String expectedWord= "Samsung";
+        String actualRestulsText = amazonPage.amazonResultElement.getText();
+
+        Assert.assertTrue(actualRestulsText.contains(expectedWord));
+
+    }
+
+    @Then("user search for {string} in search box")
+    public void userSearchForInSearchBox(String wordToSearch) {
+
+        amazonPage = new AmazonPage();
+        amazonPage.amazonSearchBox.sendKeys(wordToSearch+ Keys.ENTER);
+
+    }
+
+    @And("tests that results have {string} word")
+    public void testsThatResultsHaveWord(String desiredWord) {
+
+        String actualRestulsText = amazonPage.amazonResultElement.getText();
+        Assert.assertTrue(actualRestulsText.contains(desiredWord));
+
+    }
+
+    @Given("User goes to {string}")
+    public void user_goes_to(String desiredUrl) {
+
+        Driver.getDriver().get(ConfigReader.getProperty(desiredUrl));
+
+    }
+    @Then("tests that Url has {string} keyword")
+    public void tests_that_url_has_keyword(String expectedWord) {
+
+        String actualURl = Driver.getDriver().getCurrentUrl();
+
+        Assert.assertTrue(actualURl.contains(expectedWord));
+
+
+    }
 }
