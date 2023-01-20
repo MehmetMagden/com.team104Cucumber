@@ -1,5 +1,5 @@
 
-@wip
+
 Feature: US1005 How to use configuration.properties in methods
 
   Scenario: TC07 User tests that he could be able to reach Amazon homepage
