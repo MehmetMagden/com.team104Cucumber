@@ -107,4 +107,10 @@ public class AmazonStepdefinitions {
 
 
     }
+
+    @Given("user goes to {string} homepage")
+    public void userGoesToHomepage(String WebURL) {
+        Driver.getDriver().get(ConfigReader.getProperty(WebURL));
+
+    }
 }

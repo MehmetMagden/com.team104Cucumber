@@ -1,7 +1,8 @@
 
-@wip
-Feature: User can not login with invalid info
+@wip @US1007 @wot
+Feature: US1007 User can not login with invalid info
 
+  @T11 @smoke
   Scenario: T11 User enters invalid email and valid password
 
     Given User goes to "qdURL"

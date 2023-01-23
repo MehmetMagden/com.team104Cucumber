@@ -1,5 +1,5 @@
 
-
+@US1006
 Feature: US1006 User should be able to login with valid info
 
   Scenario: TC10 Login Test with valid userName and password
