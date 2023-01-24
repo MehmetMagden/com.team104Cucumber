@@ -1,9 +1,9 @@
 
-@wip @US1008 @wot @smoke
+@US1008 @wot @smoke
 Feature: US1008 Scenario Outline how to use more than one data
 
 
-  Scenario Outline:
+  Scenario Outline: T12 amazon search test
 
     Given user goes to "amazonURL" homepage
     Then user search for "<Item>" in search box

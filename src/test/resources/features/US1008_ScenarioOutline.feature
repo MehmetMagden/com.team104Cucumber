@@ -1,5 +1,5 @@
 
-@wip @US1008 @wot @smoke
+@US1008 @wot @smoke
 Feature: US1008 Scenario Outline how to use more than one data
 
 

@@ -55,4 +55,19 @@ public class QualityDemyStepdefinitions {
         Assert.assertTrue(qualityDemiPage.loginPageEmailTextBox.isDisplayed());
 
     }
+
+
+    @And("user manually enters invalid Emails {string}")
+    public void userManuallyEntersInvalidEmails(String userMail) {
+
+        qualityDemiPage.loginPageEmailTextBox.sendKeys(userMail);
+
+
+    }
+
+    @And("user manually enters invalid Passwords {string}")
+    public void userManuallyEntersInvalidPasswords(String userPasswrod) {
+
+        qualityDemiPage.loginPagePasswordTextBox.sendKeys(userPasswrod);
+    }
 }
