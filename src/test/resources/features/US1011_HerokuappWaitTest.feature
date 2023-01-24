@@ -1,5 +1,5 @@
 
-@wip
+
 Feature: US1011 Heruokuapp delete button test
 
  Scenario: TC15 testing delete button isvisible

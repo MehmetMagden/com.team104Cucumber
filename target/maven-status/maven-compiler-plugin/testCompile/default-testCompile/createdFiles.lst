@@ -1,0 +1,14 @@
+stepdefinitions\QualityDemyStepdefinitions.class
+utilities\ReusableMethods$1.class
+pages\EditorPage.class
+pages\QualityDemiPage.class
+pages\HerokuappPage.class
+utilities\ReusableMethods.class
+stepdefinitions\HerokuappStepdifinitions.class
+pages\AmazonPage.class
+stepdefinitions\AmazonStepdefinitions.class
+utilities\ReusableMethods$2.class
+runners\Runner.class
+utilities\Driver.class
+stepdefinitions\EditorStepdefinitions.class
+utilities\ConfigReader.class
