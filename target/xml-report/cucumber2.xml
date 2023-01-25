@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="76.383">
+    <testcase classname="Registering on Editor webpage by using Scenario Outline" name="TC14 register on Editor homepage by 5 data" time="26.588">
+        <system-out>
+            <![CDATA[When user manually goes to "https://editor.datatables.net/" homepage........passed
+Then clicks the new button..................................................passed
+And enters firstName "Hasan"................................................passed
+And enters lastName "Firat".................................................passed
+And enters position "QA"....................................................passed
+And enters office "USA".....................................................passed
+And enters extension "NY"...................................................passed
+And enters startdate "2021-01-11"...........................................passed
+And enters salary "20000"...................................................passed
+And clicks the Create button................................................passed
+When user searches by "Hasan"...............................................passed
+Then verifies that "Hasan" is in the name list..............................passed
+And closes the page.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Registering on Editor webpage by using Scenario Outline" name="TC14 register on Editor homepage by 5 data 2" time="13.772">
+        <system-out>
+            <![CDATA[When user manually goes to "https://editor.datatables.net/" homepage........passed
+Then clicks the new button..................................................passed
+And enters firstName "Mehmet"...............................................passed
+And enters lastName "Kara"..................................................passed
+And enters position "QALead"................................................passed
+And enters office "Germany".................................................passed
+And enters extension "some".................................................passed
+And enters startdate "2021-10-10"...........................................passed
+And enters salary "25000"...................................................passed
+And clicks the Create button................................................passed
+When user searches by "Mehmet"..............................................passed
+Then verifies that "Mehmet" is in the name list.............................passed
+And closes the page.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Registering on Editor webpage by using Scenario Outline" name="TC14 register on Editor homepage by 5 data 3" time="9.74">
+        <system-out>
+            <![CDATA[When user manually goes to "https://editor.datatables.net/" homepage........passed
+Then clicks the new button..................................................passed
+And enters firstName "Ahmet"................................................passed
+And enters lastName "Blue"..................................................passed
+And enters position "QA T"..................................................passed
+And enters office "USA".....................................................passed
+And enters extension "NY"...................................................passed
+And enters startdate "2020-01-11"...........................................passed
+And enters salary "25000"...................................................passed
+And clicks the Create button................................................passed
+When user searches by "Ahmet"...............................................passed
+Then verifies that "Ahmet" is in the name list..............................passed
+And closes the page.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Registering on Editor webpage by using Scenario Outline" name="TC14 register on Editor homepage by 5 data 4" time="9.285">
+        <system-out>
+            <![CDATA[When user manually goes to "https://editor.datatables.net/" homepage........passed
+Then clicks the new button..................................................passed
+And enters firstName "Yasar"................................................passed
+And enters lastName "Toprak"................................................passed
+And enters position "QA"....................................................passed
+And enters office "Turkey"..................................................passed
+And enters extension "Ist"..................................................passed
+And enters startdate "2022-12-12"...........................................passed
+And enters salary "23000"...................................................passed
+And clicks the Create button................................................passed
+When user searches by "Yasar"...............................................passed
+Then verifies that "Yasar" is in the name list..............................passed
+And closes the page.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Registering on Editor webpage by using Scenario Outline" name="TC14 register on Editor homepage by 5 data 5" time="8.162">
+        <system-out>
+            <![CDATA[When user manually goes to "https://editor.datatables.net/" homepage........passed
+Then clicks the new button..................................................passed
+And enters firstName "Hasan2"...............................................passed
+And enters lastName "Firat".................................................passed
+And enters position "QA 2"..................................................passed
+And enters office "USA2"....................................................passed
+And enters extension "NY2"..................................................passed
+And enters startdate "2011-01-11"...........................................passed
+And enters salary "24000"...................................................passed
+And clicks the Create button................................................passed
+When user searches by "Hasan2"..............................................passed
+Then verifies that "Hasan2" is in the name list.............................passed
+And closes the page.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1012 Window Test" name="TC16 User should be able to test new tab" time="7.755">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given user manually goes to "http://webdriveruniversity.com/" homepage......passed
+Then user clicks on login portal link.......................................passed
+And user switches to the new tab............................................passed
+And user enters userName....................................................passed
+And user enters password....................................................passed
+And user clicks on loginButton..............................................passed
+Then tests that the text of popup is validation failed......................passed
+And user clicks ok button at popup..........................................passed
+Then user returns to the first tab..........................................passed
+And tests that the tab is the first tab.....................................failed
+And user closes all pages...................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepdefinitions.WebDriveruniversityStepdefinitions.tests_that_the_tab_is_the_first_tab(WebDriveruniversityStepdefinitions.java:67)
+	at ✽.tests that the tab is the first tab(file:///C:/Users/Maden/IdeaProjects/team104Cucumber/src/test/resources/features/US1012_WebDriverUniversityTest.feature:14)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

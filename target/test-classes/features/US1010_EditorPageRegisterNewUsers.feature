@@ -1,4 +1,4 @@
-
+@p2
 Feature: Registering on Editor webpage by using Scenario Outline
 
   Scenario Outline: TC14 register on Editor homepage by 5 data

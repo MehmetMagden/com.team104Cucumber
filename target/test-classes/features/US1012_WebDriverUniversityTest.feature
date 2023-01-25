@@ -1,5 +1,5 @@
 Feature: US1012 Window Test
-
+  @wip @p2
   Scenario: TC16 User should be able to test new tab
     
     Given user manually goes to "http://webdriveruniversity.com/" homepage

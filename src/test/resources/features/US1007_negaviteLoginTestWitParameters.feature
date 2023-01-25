@@ -1,5 +1,5 @@
 
-@US1007 @wot
+@US1007 @wot @wip
 Feature: US1007 User can not login with invalid info
 
   @T11 @smoke

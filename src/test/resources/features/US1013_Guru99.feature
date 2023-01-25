@@ -1,5 +1,5 @@
 Feature: US1013 User tests that a name of company is in the company list on the webpage
-  @wip
+  @wip @p1
   Scenario: TC17 User should be able to test company names
     
     

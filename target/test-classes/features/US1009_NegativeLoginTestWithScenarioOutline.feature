@@ -1,5 +1,5 @@
 
-@US1009 @wot
+@US1009 @wot @p1
 Feature: US1009 User can not login with invalid info
 
   @T11 @smoke
